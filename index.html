@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    </head>
+<body>
+
+    <h1>Api INSS 2020</h1>
+    <h4>Salário Base para INSS</h4>
+    <input type="number" id="valorReal" onkeypress="return event.charCode >= 42" min="1" step="0.01" placeholder="Informe o valor em R$"   />
+    <input type="button" onclick="apiCalcInss(valorReal.value)" value ="Calcular"/>
+    <h4>Valor Total INSS</h4>
+    <input type="number" id="calcInss" placeholder="Valor INSS"/>
+    <h4>Alíquota Efetiva</h4>
+    <input type="text" id="aliquota" placeholder="Aliquota"/>
+</body>
+</html>
